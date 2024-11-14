@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="emerald">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Ticket Booking</title>
-    <link href="./style.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline text-red-600">
-        Hello world!
-      </h1>
-      <button class="btn btn-secondary">Secondary</button>
-</body>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container mx-auto px-5">
+      <!-- header -->
+      <header id="header" class="py-7"> 
+        <div class="flex justify-between items-center">
+          <h1 class="font-bold text-3xl">Swift-Seat</h1>
+       
+        <nav>
+          <ul class="gap-10 hidden md:flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </nav>
+        <button class="btn btn-outline btn-primary">
+          Button
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M20,3H4A3,3,0,0,0,1,6V16a2,2,0,0,0,2,2h.142a3.981,3.981,0,0,0,7.716,0h2.284a3.981,3.981,0,0,0,7.716,0H21a2,2,0,0,0,2-2V6A3,3,0,0,0,20,3ZM3,6A1,1,0,0,1,4,5h9V9H3ZM7,19a2,2,0,1,1,2-2A2,2,0,0,1,7,19Zm10,0a2,2,0,1,1,2-2A2,2,0,0,1,17,19Zm4-3h-.142a3.981,3.981,0,0,0-7.716,0H10.858a3.981,3.981,0,0,0-7.716,0H3V11H21Zm0-7H15V5h5a1,1,0,0,1,1,1Z"
+            />
+          </svg>
+        </button>
+    </div>
+      </header>
+      <!-- hero section -->
+      <section id="hero"></section>
+      <!-- offer section -->
+      <section id="offer"></section>
+      <!-- ticket section -->
+      <section id="ticket"></section>
+      <!-- seat plan section -->
+      <section id="seatPlan"></section>
+      <!-- footer section -->
+      <footer id="footer"></footer>
+    </main>
+  </body>
 </html>
