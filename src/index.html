@@ -7,41 +7,69 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="container mx-auto px-5">
+    <main class="container mx-auto px-8 md:px-14">
       <!-- header -->
-      <header id="header" class="py-7"> 
+      <header id="header" class="py-7">
         <div class="flex justify-between items-center">
-          <h1 class="text-3xl raleway-boldItalic">Swift-SeaT</h1>
-       
-        <nav>
-          <ul class="gap-10 hidden md:flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Search</a></li>
-          </ul>
-        </nav>
-        <button class="btn btn-outline btn-primary">
-          Button
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1"
-              d="M20,3H4A3,3,0,0,0,1,6V16a2,2,0,0,0,2,2h.142a3.981,3.981,0,0,0,7.716,0h2.284a3.981,3.981,0,0,0,7.716,0H21a2,2,0,0,0,2-2V6A3,3,0,0,0,20,3ZM3,6A1,1,0,0,1,4,5h9V9H3ZM7,19a2,2,0,1,1,2-2A2,2,0,0,1,7,19Zm10,0a2,2,0,1,1,2-2A2,2,0,0,1,17,19Zm4-3h-.142a3.981,3.981,0,0,0-7.716,0H10.858a3.981,3.981,0,0,0-7.716,0H3V11H21Zm0-7H15V5h5a1,1,0,0,1,1,1Z"
-            />
-          </svg>
-        </button>
-    </div>
+          <h1 class="text-2xl sm:text-3xl raleway-boldItalic">Swift-SeaT</h1>
+          <nav>
+            <ul class="gap-10 hidden md:flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Search</a></li>
+            </ul>
+          </nav>
+          <button class="btn btn-outline btn-primary">
+            Button
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M20,3H4A3,3,0,0,0,1,6V16a2,2,0,0,0,2,2h.142a3.981,3.981,0,0,0,7.716,0h2.284a3.981,3.981,0,0,0,7.716,0H21a2,2,0,0,0,2-2V6A3,3,0,0,0,20,3ZM3,6A1,1,0,0,1,4,5h9V9H3ZM7,19a2,2,0,1,1,2-2A2,2,0,0,1,7,19Zm10,0a2,2,0,1,1,2-2A2,2,0,0,1,17,19Zm4-3h-.142a3.981,3.981,0,0,0-7.716,0H10.858a3.981,3.981,0,0,0-7.716,0H3V11H21Zm0-7H15V5h5a1,1,0,0,1,1,1Z"
+              />
+            </svg>
+          </button>
+        </div>
       </header>
       <!-- hero section -->
-      <section id="hero"></section>
+      <section id="hero ">
+        <div>
+          <div
+            class="hero min-h-[500px] rounded-3xl"
+            style="
+              background-image: url(https://i.ibb.co.com/Vw4LPQ8/banner.webp);
+            "
+          >
+            <div class="hero-overlay bg-opacity-70 rounded-3xl"></div>
+            <div class="hero-content text-neutral-content text-center">
+              <div class="max-w-xl">
+                <h1 class="text-5xl raleway-extrabold">
+                  Premium Travel with
+                  <span class="text-primary">THACO Bus</span>
+                </h1>
+                <p class="my-8 inter-regular">
+                  " Travelers can compare routes, choose seats, and secure
+                  tickets from anywhere, anytime, without waiting in lines.
+                  Thako ensures a hassle-free experience by enabling users to
+                  book, modify, or cancel tickets "
+                </p>
+                <button class="btn btn-primary raleway-bold">
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </section>
       <!-- offer section -->
       <section id="offer"></section>
       <!-- ticket section -->
