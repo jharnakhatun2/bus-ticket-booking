@@ -6,7 +6,7 @@
     <title>Bus Ticket Booking</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-[#F7F8F8]">
     <main class="container mx-auto px-3 md:px-14">
       <!-- header -->
       <header id="header" class="py-7">
@@ -267,10 +267,66 @@
         <button class="w-32 btn btn-outline btn-primary">See All Offers</button>
       </section>
       <!-- ticket section -->
-      <section id="ticket"></section>
-      <!-- seat plan section -->
-      <section id="seatPlan"></section>
-      <!-- footer section -->
+      <section id="ticket" class="my-24 sm:my-44">
+        <div class="w-full h-16 border-t-2 border-primary rounded-full"></div>
+        <h1 class="raleway-bold text-3xl sm:text-4xl text-center">
+          THACO Paribahan
+        </h1>
+        <p class="w-full sm:w-3/6 mx-auto text-center py-5">
+          Yes, you can run unit tests and view the results directly within the
+          app. The integrated testing features allow for a streamlined .
+        </p>
+        <!-- Ticket Information -->
+        <div id="ticketInfo" class="my-10">
+          <div
+            class="relative w-full h-[418px] bg-white rounded-2xl flex items-center justify-evenly px-0 py-2 shadow-sm"
+          >
+            <!-- Left Circle -->
+            <div
+              class="hidden absolute top-0 left-2/3 transform -translate-y-1/2 bg-[#F7F8F8] w-16 h-16 rounded-full"
+            ></div>
+            <!-- Left Circle -->
+            <div
+              class="absolute left-0 top-64 transform -translate-x-1/2 bg-[#F7F8F8] w-16 h-16 rounded-full"
+            ></div>
+
+            <!-- Right Circle -->
+            <div
+              class="hidden absolute left-2/3 bottom-0 transform translate-y-1/2 bg-[#F7F8F8] w-16 h-16 rounded-full"
+            ></div>
+            <!-- Right Circle -->
+            <div
+              class="absolute top-64 right-0 transform translate-x-1/2 bg-[#F7F8F8] w-16 h-16 rounded-full"
+            ></div>
+
+            <!-- Dotted Line -->
+            <div
+              class="hidden absolute inset-y-16 left-2/3 transform translate-x-8 border-dotted border-l-2 border-primary"
+            ></div>
+            <!-- Dotted Line -->
+            <div
+              class="absolute inset-x-12 top-72 border-dotted border-t-2 border-primary"
+            ></div>
+
+            <!-- Left Content -->
+            <div class="w-1/2 text-start p-2">
+              <h2 class="text-lg lg:text-4xl font-semibold">15% OFF</h2>
+              <p class="text-sm raleway-semibold">on your next purchase</p>
+              <p>use by January 2024</p>
+            </div>
+
+            <!-- Right Content -->
+            <div class="text-start">
+              <h2 class="text-md lg:text-2xl font-semibold">NEW15</h2>
+              <p class="text-sm">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <!-- seat plan section -->
+        <div id="seatPlan"></div>
+
+        <!-- footer section -->
+      </section>
       <footer id="footer"></footer>
     </main>
   </body>
