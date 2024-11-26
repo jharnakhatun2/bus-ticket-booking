@@ -37,7 +37,7 @@
       <div class="hero min-h-[500px] rounded-3xl" style="
             background-image: url(https://i.ibb.co.com/Vw4LPQ8/banner.webp);
           ">
-        <div class="hero-overlay bg-opacity-70 rounded-3xl relative pb-32"></div>
+        <div class="hero-overlay bg-opacity-60 rounded-3xl relative pb-32"></div>
         <div class="hero-content text-neutral-content text-center">
           <div class="max-w-2xl">
             <h1 class="max-w-xl mx-auto text-3xl sm:text-5xl raleway-extrabold">
@@ -133,13 +133,13 @@
         <div
           class="relative w-[300px] h-[148px] lg:w-[420px] lg:h-[180px] xl:w-[573px] xl:h-[220px] bg-yellow-400 rounded-2xl flex items-center justify-evenly px-0 py-2">
           <!-- Left Circle -->
-          <div class="absolute top-0 left-1/2 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full"></div>
+          <div class="absolute top-0 left-1/2 transform -translate-y-1/2 bg-[#F7F8F8] w-8 h-8 rounded-full"></div>
 
           <!-- Right Circle -->
-          <div class="absolute left-1/2 bottom-0 transform translate-y-1/2 bg-white w-8 h-8 rounded-full overflow-hidden"></div>
+          <div class="absolute left-1/2 bottom-0 transform translate-y-1/2 bg-[#F7F8F8] w-8 h-8 rounded-full overflow-hidden"></div>
 
           <!-- Dotted Line -->
-          <div class="absolute inset-y-0 left-1/2 transform translate-x-3 border-dotted border-l-2 border-white"></div>
+          <div class="absolute inset-y-0 left-1/2 transform translate-x-3 border-dotted border-l-2 border-[#F7F8F8]"></div>
 
           <!-- Left Content -->
           <div class="w-1/2 text-start p-2">
@@ -158,13 +158,13 @@
         <div
           class="relative w-[300px] lg:w-[420px] xl:w-[573px] lg:h-[180px] xl:h-[220px] bg-red-400 rounded-2xl flex items-center justify-evenly px-0 py-2 mt-6 sm:mt-0">
           <!-- Left Circle -->
-          <div class="absolute top-0 left-1/2 transform -translate-y-1/2 bg-white w-8 h-8 rounded-full"></div>
+          <div class="absolute top-0 left-1/2 transform -translate-y-1/2 bg-[#F7F8F8] w-8 h-8 rounded-full"></div>
 
           <!-- Right Circle -->
-          <div class="absolute left-1/2 bottom-0 transform translate-y-1/2 bg-white w-8 h-8 rounded-full overflow-hidden"></div>
+          <div class="absolute left-1/2 bottom-0 transform translate-y-1/2 bg-[#F7F8F8] w-8 h-8 rounded-full overflow-hidden"></div>
 
           <!-- Dotted Line -->
-          <div class="absolute inset-y-0 left-1/2 transform translate-x-3 border-dotted border-l-2 border-white"></div>
+          <div class="absolute inset-y-0 left-1/2 transform translate-x-3 border-dotted border-l-2 border-[#F7F8F8]"></div>
 
           <!-- Left Content -->
           <div class="w-1/2 text-start p-2">
@@ -387,7 +387,7 @@
           <div class="divide-y divide-dashed"></div>
           <!-- stearing wheel -->
           <div class=" flex justify-end items-center w-full">
-            <div class="bg-gray-100 px-7 py-3 rounded-2xl my-5"><svg class="w-8 h-8 " fill="#000000" version="1.1"
+            <div class="bg-gray-100 px-7 py-3 rounded my-5"><svg class="w-4 h-4 " fill="#000000" version="1.1"
                 id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 0 512 512" xml:space="preserve">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -407,156 +407,139 @@
           <!-- Seat Number -->
           <div id="seat-number" class="w-full">
             <!-- Seat A -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 mt-5">
-              <p class="mr-5">A</p>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A4</div>
-                </div>
+            <div class="flex justify-between items-center mt-5">
+              <p class="hidden sm:block">A</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">A4</div>
               </div>
             </div>
+            
+            
             <!-- seat B -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">B</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">B</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">B4</div>
               </div>
             </div>
+            
             <!-- seat C -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">C</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">C</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">C4</div>
               </div>
             </div>
             <!-- seat D -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">D</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">D</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">D4</div>
               </div>
             </div>
             <!-- seat E -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">E</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">E</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">E4</div>
               </div>
             </div>
             <!-- seat F -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">F</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">F</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">F4</div>
               </div>
             </div>
             <!-- seat G -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">G</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">G</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">G4</div>
               </div>
             </div>
             <!-- seat H -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">H</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">H</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">H4</div>
               </div>
             </div>
             <!-- seat I -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">I</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">I</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">I4</div>
               </div>
             </div>
             <!-- seat J -->
-            <div class="flex gap-5 lg:gap-2 xl:gap-5 lg:my-5">
-              <span class="mr-5">J</span>
-              <div class="lg:flex gap-5 xl:gap-10">
-                <div class="flex gap-5 lg:gap-2 xl:gap-5">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J1</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J2</div>
-                </div>
-                <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 my-5 lg:my-0">
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J3</div>
-                  <div class="w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J4</div>
-                </div>
+            <div class="flex justify-between items-center my-5">
+              <p class="hidden sm:block">J</p>
+              <div class="flex gap-5 lg:gap-2 xl:gap-5">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J1</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J2</div>
+              </div>
+              <div class="flex items-center gap-5 lg:gap-2 xl:gap-5 ">
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J3</div>
+                <div class="w-10 lg:w-20 text-center bg-gray-100 py-2 rounded cursor-pointer">J4</div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Seat Info -->
-        <div class="w-full sm:w-2/4 sm:pl-10 pt-5 sm:pt-0">
+        <div class="w-full sm:w-2/4 sm:pl-10 pt-5 sm:pt-0 p-3">
           <h3 class="raleway-semibold text-2xl">Select Your Seat</h3>
           <div class="divide-y-2 divide-dashed"></div>
           <!-- table -->
           <div class="bg-gray-100 p-8 rounded-2xl space-y-3 my-5">
             <div class="divide-y divide-dashed space-y-3">
-              <div class="flex justify-between items-center inter-semibold ">
+              <div class="flex justify-between items-center inter-semibold text-sm">
                 <h2>Seat <span class="bg-primary px-2 rounded">2</span></h2>
                 <h2>Class</h2>
                 <h2>Price</h2>
