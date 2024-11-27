@@ -2341,6 +2341,14 @@ html {
   outline-offset: 2px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .inter-regular {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -2395,10 +2403,6 @@ html {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .after\:absolute::after {
@@ -2647,3 +2651,5 @@ html {
     gap: 1.25rem;
   }
 }
+  
+  
