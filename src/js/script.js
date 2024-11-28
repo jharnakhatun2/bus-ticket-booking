@@ -8,6 +8,7 @@ let grandTotal = getId('grandTotal');
 let couponInput = getId('couponInput');
 const applyBtn = getId('applyBtn');
 const discountAmountDisplay = getId('discountAmountDisplay');
+const couponMessage = getId('couponMessage');
 
 let buttonCount = 0;
 //Select your seat
@@ -91,6 +92,8 @@ applyBtn.addEventListener('click', (e) => {
   `
     // update grand total price
     grandTotal.textContent = twentyPrecentDiscount.discountPrice;
+  }else{
+    couponMessage.textContent = 'Please enter valid coupon code!';
   }
 
   // input field reset
