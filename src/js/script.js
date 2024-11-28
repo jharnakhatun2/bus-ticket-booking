@@ -91,6 +91,9 @@ seatBtn.forEach(seat => {
 applyBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
+  // Flag to track if a valid coupon is used
+  let isValidCouponCode = false;
+
   //condition for different coupon and percentage
   if (couponInput.value === 'NEW15') {
     const fiftyPrecentDiscount = discountCouponCalculation(parseInt(grandTotal.textContent), 15);
@@ -103,6 +106,9 @@ applyBtn.addEventListener('click', (e) => {
     // update grand total price
     grandTotal.textContent = fiftyPrecentDiscount.discountPrice;
 
+    // Mark coupon as valid
+    isValidCouponCode = true;
+
   } else if (couponInput.value === 'Couple 20') {
     const twentyPrecentDiscount = discountCouponCalculation(parseInt(grandTotal.textContent), 20);
     // display discount amount
@@ -112,15 +118,25 @@ applyBtn.addEventListener('click', (e) => {
   `
     // update grand total price
     grandTotal.textContent = twentyPrecentDiscount.discountPrice;
+
+    // Mark coupon as valid
+    isValidCouponCode = true;
+
   } else {
     couponMessage.textContent = 'Please enter valid coupon code!';
   }
 
+  if (isValidCouponCode) {
+    // input and apply will disabled
+    couponInput.disabled = true;
+    applyBtn.disabled = true;
+    couponMessage.textContent = '';
+
+  }
+
   // input field reset
   couponInput.value = '';
-  // input and apply will disabled
-  couponInput.disabled = true;
-  applyBtn.disabled = true;
+
 })
 
 
