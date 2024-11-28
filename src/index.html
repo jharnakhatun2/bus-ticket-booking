@@ -575,21 +575,24 @@
           <!-- Passenger Info -->
           <div>
             <div class="my-5">
-              <label class="w-full"> <span class="inter-semibold">Passenger Name</span> <span>*</span>
-                <input type="text" placeholder="Enter your name" class="input input-bordered w-full mt-2" />
+              <label for="name" class="w-full"> <span class="inter-semibold">Passenger Name</span> <span>*</span>
+                <input id="name" type="text" placeholder="Enter your name" name="name" class="input input-bordered w-full mt-2" required/>
               </label>
             </div>
             <div class="my-5">
-              <label class="w-full"><span class="inter-semibold">Phone Number</span> <span>*</span>
-                <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full mt-2" />
+              <label for="phone" class="w-full"><span class="inter-semibold">Phone Number</span> <span>*</span>
+                <input id="phone" type="text" placeholder="Enter your phone number" name="phone" class="input input-bordered w-full mt-2" required/>
               </label>
             </div>
             <div class="my-5">
-              <label class="w-full"><span class="inter-semibold">Email ID</span> <span>*</span>
-                <input type="email" placeholder="Enter your email id" class="input input-bordered w-full mt-2" />
+              <label for="email" class="w-full"><span class="inter-semibold">Email ID</span> <span>*</span>
+                <input id="email" type="email" placeholder="Enter your email id" name="email" class="input input-bordered w-full mt-2" required/>
               </label>
             </div>
-            <button class="btn btn-primary w-full text-white text-xl">Next</button>
+            <!-- next button -->
+              <button id="nextBtn" class="btn-primary btn w-full text-lg text-white" disabled>Next</button>
+               
+
             <div class="flex justify-evenly my-5">
               <a href="#"
                 class="text-gray-500 relative after:content-[''] after:block after:w-full after:h-[1px] after:bg-gray-500 after:absolute after:left-0 after:-bottom-0.5">

@@ -9,8 +9,26 @@ let couponInput = getId('couponInput');
 const applyBtn = getId('applyBtn');
 const discountAmountDisplay = getId('discountAmountDisplay');
 const couponMessage = getId('couponMessage');
+//input fields
+const nameP = getId('name');
+const phone = getId('phone');
+const email = getId('email');
+const nextBtn = getId('nextBtn');
+const nextDiv = getId('nextDiv');
 
 let buttonCount = 0;
+
+// function for enable next button
+function enableNextButton() {
+  const phoneNumber = phone.value.trim();
+  if (buttonCount > 0 && phoneNumber.length > 0) {
+    console.log("object");
+    nextBtn.disabled = false;
+  }
+}
+phone.addEventListener('input', enableNextButton)
+
+
 //Select your seat
 seatBtn.forEach(seat => {
 
@@ -61,6 +79,8 @@ seatBtn.forEach(seat => {
 
     //remove listener from button
     seat.removeEventListener('click', handleClick);
+
+    enableNextButton()
   }
   //add listener in button
   seat.addEventListener('click', handleClick);
@@ -70,7 +90,7 @@ seatBtn.forEach(seat => {
 //Coupon Apply function
 applyBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  
+
   //condition for different coupon and percentage
   if (couponInput.value === 'NEW15') {
     const fiftyPrecentDiscount = discountCouponCalculation(parseInt(grandTotal.textContent), 15);
@@ -92,7 +112,7 @@ applyBtn.addEventListener('click', (e) => {
   `
     // update grand total price
     grandTotal.textContent = twentyPrecentDiscount.discountPrice;
-  }else{
+  } else {
     couponMessage.textContent = 'Please enter valid coupon code!';
   }
 
@@ -101,5 +121,33 @@ applyBtn.addEventListener('click', (e) => {
   // input and apply will disabled
   couponInput.disabled = true;
   applyBtn.disabled = true;
-
 })
+
+
+// Click next button and redirect the link
+nextBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  //trim input values
+  const passengerName = nameP.value.trim();
+  const passengerPhone = phone.value.trim();
+  const passengerEmail = email.value.trim();
+
+  //log passenger detail
+  console.log(passengerName, passengerPhone, passengerEmail);
+
+  // Validate inputs
+  if (!passengerName || !passengerPhone || !passengerEmail) {
+    alert("Please fill out all fields before proceeding.");
+    return;
+  }
+
+  //clear input fields
+  nameP.value = '';
+  phone.value = '';
+  email.value = '';
+
+  // Redirect to the link
+  window.location.href = 'success.html';
+})
+
+
